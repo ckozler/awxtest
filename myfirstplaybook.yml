@@ -6,5 +6,10 @@
       debug:
         msg: "Hello AWX!"
     - name: Check Uptime
-      ansible.builtin.command: uptime
+      command: uptime
+      register: result
+      ignore_errors: True
+    - name: Debug Output
+      debug:
+        msg: var=result
 
