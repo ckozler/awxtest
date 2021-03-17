@@ -5,6 +5,9 @@
     - name: Hello Message
       debug:
         msg: "Hello AWX!"
-- name: Check Uptime
-  ansible.builtin.command: uptime
+    - name: Check Uptime
+      ansible.builtin.command: uptime
+      register: theuptime
+       debug:
+         msg: {{ theuptime }}
 
