@@ -7,7 +7,4 @@
         msg: "Hello AWX!"
     - name: Check Uptime
       ansible.builtin.command: uptime
-      register: theuptime
-       debug:
-         msg: {{ theuptime }}
 
