@@ -1,3 +1,4 @@
+
 - name: My First Playbook
   hosts: all
   tasks:
