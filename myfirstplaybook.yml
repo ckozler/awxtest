@@ -11,5 +11,5 @@
       ignore_errors: True
     - name: Debug Output
       debug:
-        msg: var={{ result }}
+        msg: var={{ result.stdout }}
 
